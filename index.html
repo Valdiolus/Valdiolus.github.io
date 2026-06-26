@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valdis Gerasymiak | Portfolio</title>
+  <meta name="description" content="Portfolio website for Valdis Gerasymiak featuring embedded hardware and connected mobility projects.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23111c1d'/%3E%3Cpath d='M18 18h12l6 17 6-17h4L36 46h-4L18 18zm0 0v28h4V26l-4-8zm24 0h4v28h-4z' fill='%230ca678'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="hero">
+      <nav class="topbar" aria-label="Primary">
+        <a class="brand" href="#home">VG</a>
+        <div class="topbar-links">
+          <a href="#project">Featured Project</a>
+          <a href="#inverter">Power Inverter</a>
+          <a href="#gallery">Gallery</a>
+        </div>
+      </nav>
+
+      <section class="hero-content" id="home">
+        <p class="eyebrow">GitHub Pages Portfolio</p>
+        <h1>Valdis Gerasymiak</h1>
+        <p class="hero-copy">
+          Embedded systems, connected hardware, and product-level integration from board bring-up to field-ready control systems.
+        </p>
+        <div class="hero-metrics" aria-label="Project capabilities">
+          <div>
+            <span class="metric-value">BLE</span>
+            <span class="metric-label">Wireless control</span>
+          </div>
+          <div>
+            <span class="metric-value">2G/3G</span>
+            <span class="metric-label">Remote connectivity</span>
+          </div>
+          <div>
+            <span class="metric-value">2x CAN</span>
+            <span class="metric-label">Vehicle networking</span>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="feature-card" id="project">
+        <div class="feature-copy">
+          <p class="section-tag">Featured Project</p>
+          <h2>HLS for E-Bike Control</h2>
+          <p>
+            HLS (High level system) for E-bike, controls all functions of a e-bike using BLE, 2G/3G, and Wifi. Had also GPS, INS with dedicated STMF4 for Kalman and Euler calculations, 2 CANs and Li-ion batteries.
+          </p>
+          <ul class="capability-list">
+            <li>Mobile app interface for live diagnostics and control</li>
+            <li>Integrated telematics with GPS and inertial sensing</li>
+            <li>Dedicated MCU path for motion estimation and filtering</li>
+            <li>Multi-bus architecture for controller and battery subsystems</li>
+          </ul>
+        </div>
+
+        <figure class="feature-visual">
+          <img src="images/HLS1.png" alt="E-bike HLS electronics enclosure and mobile control interface" loading="eager">
+          <figcaption>System enclosure paired with a mobile dashboard for runtime control and monitoring.</figcaption>
+        </figure>
+      </section>
+
+      <section class="gallery-section" id="gallery">
+        <div class="section-heading">
+          <p class="section-tag">Project Gallery</p>
+          <h2>Hardware Views</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-card">
+            <img src="images/HLS1.png" alt="Full HLS assembly with phone application" loading="lazy">
+            <figcaption>Integrated HLS assembly with the companion e-bike control application.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/HLS2.png" alt="HLS PCB showing communication and power components" loading="lazy">
+            <figcaption>Main board detail showing communication interfaces, storage, and power electronics.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/HLS3.png" alt="HLS enclosure wiring and internal electronics" loading="lazy">
+            <figcaption>Assembled enclosure view highlighting internal cabling and subsystem integration.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="feature-card" id="inverter">
+        <div class="feature-copy">
+          <p class="section-tag">Power Electronics Project</p>
+          <h2>PWR Invertor for E-Bike</h2>
+          <p>
+            Power invertor for e-bike, 100V, up to 300A peak, up to 100A constant, CAN interface, isolated drivers for all main mosfets.
+          </p>
+          <ul class="capability-list">
+            <li>100V drivetrain power stage designed for high-current e-bike operation</li>
+            <li>Up to 300A peak and 100A continuous current capability</li>
+            <li>CAN interface for system-level coordination with vehicle electronics</li>
+            <li>Isolated gate drivers for the main MOSFET switching path</li>
+          </ul>
+        </div>
+
+        <figure class="feature-visual">
+          <img src="images/PWR_invertor1.png" alt="E-bike power inverter enclosure beside system concept materials" loading="lazy">
+          <figcaption>Packaged inverter hardware prepared for integration into the broader e-bike power architecture.</figcaption>
+        </figure>
+      </section>
+
+      <section class="gallery-section" aria-labelledby="inverter-gallery-title">
+        <div class="section-heading">
+          <p class="section-tag">Inverter Gallery</p>
+          <h2 id="inverter-gallery-title">Power Stage Views</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-card">
+            <img src="images/PWR_invertor1.png" alt="Packaged e-bike power inverter module" loading="lazy">
+            <figcaption>Mechanical enclosure with cooling-focused external form factor for the inverter assembly.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/PWR_invertor2.png" alt="Rendered power inverter PCB with capacitor banks and bus layout" loading="lazy">
+            <figcaption>PCB render showing the high-current layout, capacitor banks, and heat-sink-mounted power stage.</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
