@@ -1,2 +1,2 @@
-# Valdiolus.github.io
+# valdis.gerasymiak.github.io
 Valdis Gerasymiak portfolio
