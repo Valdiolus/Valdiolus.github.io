@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Valdis Gerasymiak | Portfolio</title>
-  <meta name="description" content="Portfolio website for Valdis Gerasymiak featuring embedded hardware and connected mobility projects.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23111c1d'/%3E%3Cpath d='M18 18h12l6 17 6-17h4L36 46h-4L18 18zm0 0v28h4V26l-4-8zm24 0h4v28h-4z' fill='%230ca678'/%3E%3C/svg%3E">
+  <meta name="description" content="Portfolio website for Valdis Gerasymiak featuring embedded hardware, connected mobility, and AI camera product projects.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230d1d33'/%3E%3Cpath d='M18 18h12l6 17 6-17h4L36 46h-4L18 18zm0 0v28h4V26l-4-8zm24 0h4v28h-4z' fill='%232563eb'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260701b">
 </head>
 <body>
   <div class="site-shell">
@@ -17,71 +17,356 @@
       <nav class="topbar" aria-label="Primary">
         <a class="brand" href="#home">VG</a>
         <div class="topbar-links">
-          <a href="#project">Featured Project</a>
-          <a href="#inverter">Power Inverter</a>
-          <a href="#gallery">Gallery</a>
+          <a href="#projects">Projects</a>
+          <a href="#humanoid-robot">Humanoid Robot</a>
+          <a href="#essentix">Essentix</a>
+          <a href="#rear-view-camera-dataset">Rear View Dataset</a>
+          <a href="#license-plate-dataset">License Plate Dataset</a>
+          <a href="#ajax-ai">Ajax AI</a>
+          <a href="#ajax-mco">Ajax MCO</a>
+          <a href="#rwc">RWC</a>
+          <a href="#hls">HLS</a>
+          <a href="#ebike">E-bike</a>
+          <a href="#pwr-invertor">PWR_invertor</a>
         </div>
       </nav>
 
       <section class="hero-content" id="home">
-        <p class="eyebrow">GitHub Pages Portfolio</p>
+        <p class="eyebrow">Personal Portfolio</p>
         <h1>Valdis Gerasymiak</h1>
         <p class="hero-copy">
-          Embedded systems, connected hardware, and product-level integration from board bring-up to field-ready control systems.
+          Robotics/AI-ML/Embedded Engineer
         </p>
-        <div class="hero-metrics" aria-label="Project capabilities">
-          <div>
-            <span class="metric-value">BLE</span>
-            <span class="metric-label">Wireless control</span>
-          </div>
-          <div>
-            <span class="metric-value">2G/3G</span>
-            <span class="metric-label">Remote connectivity</span>
-          </div>
-          <div>
-            <span class="metric-value">2x CAN</span>
-            <span class="metric-label">Vehicle networking</span>
-          </div>
-        </div>
       </section>
     </header>
 
     <main>
-      <section class="feature-card" id="project">
-        <div class="feature-copy">
-          <p class="section-tag">Featured Project</p>
-          <h2>HLS for E-Bike Control</h2>
-          <p>
-            HLS (High level system) for E-bike, controls all functions of a e-bike using BLE, 2G/3G, and Wifi. Had also GPS, INS with dedicated STMF4 for Kalman and Euler calculations, 2 CANs and Li-ion batteries.
+      <section class="gallery-section" id="projects">
+        <div class="section-heading">
+          <p class="section-tag">Projects</p>
+        </div>
+
+        <div class="project-index">
+          <article class="project-index-card">
+            <h3>Humanoid Robot</h3>
+            <p>Humanoid robot actuator and leg-module development covering CAD, mechanical build, and motion prototype validation.</p>
+            <a class="project-link" href="#humanoid-robot">Open project</a>
+          </article>
+          <article class="project-index-card">
+            <h3>Essentix</h3>
+            <p>Daily AI-curated email digests from trusted US news portals, filtered to only the topics the user cares about.</p>
+            <a class="project-link" href="#essentix">Open project</a>
+          </article>
+          <article class="project-index-card">
+            <h3>Rear View Camera Dataset</h3>
+            <p>Large-scale bicycle rear-view perception dataset for object detection across day and night riding scenes.</p>
+            <a class="project-link" href="#rear-view-camera-dataset">Open project</a>
+          </article>
+          <article class="project-index-card">
+            <h3>License Plate Dataset</h3>
+            <p>License plate detection dataset prepared for deep neural detector training and validation.</p>
+            <a class="project-link" href="#license-plate-dataset">Open project</a>
+          </article>
+          <article class="project-index-card">
+            <h3>Ajax AI</h3>
+            <p>AI on the edge work for Ajax camera-enabled products, spanning recognition-driven features across multiple devices.</p>
+            <a class="project-link" href="#ajax-ai">Open project</a>
+          </article>
+          <article class="project-index-card">
+            <h3>Ajax MCO</h3>
+            <p>Contribution to the MotionCam Outdoor platform focused on the camera sensor quality and functionality.</p>
+            <a class="project-link" href="#ajax-mco">Open project</a>
+          </article>
+          <article class="project-index-card">
+            <h3>RWC</h3>
+            <p>Rear-veiw bicycle camera safety module combining embedded vision hardware, custom optics integration, and on-bike real hardware validation.</p>
+            <a class="project-link" href="#rwc">Open project</a>
+          </article>
+          <article class="project-index-card">
+            <h3>HLS</h3>
+            <p>High-level e-bike control system with connectivity, sensing, batteries and multi-bus integration.</p>
+            <a class="project-link" href="#hls">Open project</a>
+          </article>
+          <article class="project-index-card">
+            <h3>E-bike</h3>
+            <p>Vehicle-level e-bike prototype integrating battery packaging, drivetrain hardware, and real-world assembly work.</p>
+            <a class="project-link" href="#ebike">Open project</a>
+          </article>
+          <article class="project-index-card">
+            <h3>PWR_invertor</h3>
+            <p>High-current power inverter for e-bike drive control with CAN and isolated gate driving.</p>
+            <a class="project-link" href="#pwr-invertor">Open project</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-section" id="humanoid-robot">
+        <div class="project-header">
+          <p class="section-tag">Project</p>
+          <h2>Humanoid Robot</h2>
+          <p class="project-description">
+            HR is a humanoid robot project targeting a 1.5 m tall, 45 kg platform with a 1 m/s walking speed, centered on compact actuator modules, leg mechanics, and full-body motion hardware.
           </p>
           <ul class="capability-list">
-            <li>Mobile app interface for live diagnostics and control</li>
-            <li>Integrated telematics with GPS and inertial sensing</li>
-            <li>Dedicated MCU path for motion estimation and filtering</li>
-            <li>Multi-bus architecture for controller and battery subsystems</li>
+            <li>Building a humanoid robot platform with 1.5 m height, 45 kg mass, and 1 m/s walking target</li>
+            <li>Built a 6 DOF robotic leg in 2 months with a 3D-printed enclosure integrating all motors</li>
+            <li>Mechanical design of humanoid leg assemblies and compact actuator packaging</li>
           </ul>
         </div>
 
-        <figure class="feature-visual">
-          <img src="images/HLS1.png" alt="E-bike HLS electronics enclosure and mobile control interface" loading="eager">
-          <figcaption>System enclosure paired with a mobile dashboard for runtime control and monitoring.</figcaption>
+        <figure class="gallery-card project-main-photo media-card">
+          <video controls preload="metadata" playsinline poster="images/HR1.jpg">
+            <source src="images/HR7.mp4" type="video/mp4">
+            Your browser does not support the humanoid robot prototype video.
+          </video>
+          <figcaption>Prototype motion clip from the humanoid robot development process, shows basic motion of all actuators.</figcaption>
+        </figure>
+
+        <div class="gallery-grid project-gallery">
+          <figure class="gallery-card">
+            <img src="images/HR1.jpg" alt="Humanoid robot leg CAD assembly" loading="lazy">
+            <figcaption>Early shank prototype.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/HR2.jpg" alt="Humanoid robot actuator concept view" loading="lazy">
+            <figcaption>3D-printed early shank prototype .</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/HR3.jpg" alt="Humanoid robot mechanical prototype detail" loading="lazy">
+            <figcaption>Printing part of a shank.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/HR4.jpg" alt="Humanoid robot actuator hardware on a desk" loading="lazy">
+            <figcaption>Early Hip actuators assembly.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/HR5.jpg" alt="Humanoid robot prototype component view" loading="lazy">
+            <figcaption>Fully-assebled Leg prototype.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/HR6.jpg" alt="Humanoid robot assembled module" loading="lazy">
+            <figcaption>Fully-assebled Leg prototype with electronics ready for tests (see video).</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="project-section" id="essentix">
+        <div class="project-header">
+          <p class="section-tag">Project</p>
+          <h2>Essentix</h2>
+          <p class="project-description">
+            Essentix is a tool that sends a daily email digest with summaries from trusted US news portals, filtered to only the topics each user is interested in.
+          </p>
+          <ul class="capability-list">
+            <li>Delivers daily curated news digests to email instead of forcing users through noisy news feeds</li>
+            <li>Supports general, advanced, and custom topics so users can track exactly what matters to them</li>
+            <li>Summarizes the previous day’s essential stories and includes direct links to the original sources</li>
+            <li>Built to reduce information overload while keeping coverage focused, relevant, and easy to verify</li>
+          </ul>
+          <a class="project-link" href="https://essentix.ai/">Open website</a>
+        </div>
+
+        <figure class="gallery-card project-main-photo">
+          <img src="images/essentix-cover.svg" alt="Essentix daily news digest product cover" loading="lazy">
+          <figcaption>Essentix product concept for daily topic-based news summaries delivered by email.</figcaption>
         </figure>
       </section>
 
-      <section class="gallery-section" id="gallery">
-        <div class="section-heading">
-          <p class="section-tag">Project Gallery</p>
-          <h2>Hardware Views</h2>
+      <section class="project-section" id="rear-view-camera-dataset">
+        <div class="project-header">
+          <p class="section-tag">Project</p>
+          <h2>Rear View Camera Dataset</h2>
+          <p class="project-description">
+            A perception dataset for smart bicycle rear-view cameras, created to train object-detection models across realistic traffic scenes with both daytime and nighttime conditions.
+          </p>
+          <ul class="capability-list">
+            <li>COCODetectionDataset format prepared for FiftyOne-based inspection workflows</li>
+            <li>32,448 training images and 3,948 validation images</li>
+            <li>Six classes: person, car, bicycle, motorcycle, bus, and truck</li>
+            <li>Used for YOLOv5 training and auto-labeling experiments for rear-view mobility vision systems</li>
+          </ul>
+          <a class="project-link" href="https://github.com/Valdiolus/Rear_view_camera_dataset">Open repository</a>
         </div>
 
-        <div class="gallery-grid">
+        <figure class="gallery-card project-main-photo">
+          <img src="https://raw.githubusercontent.com/Valdiolus/Rear_view_camera_dataset/main/photo/photo_example_day.png" alt="Rear view camera dataset day scene example" loading="lazy">
+          <figcaption>Daytime sample from the rear-view camera dataset showing the object-detection target classes in real cycling traffic scenes.</figcaption>
+        </figure>
+
+        <div class="gallery-grid project-gallery">
           <figure class="gallery-card">
-            <img src="images/HLS1.png" alt="Full HLS assembly with phone application" loading="lazy">
+            <img src="https://raw.githubusercontent.com/Valdiolus/Rear_view_camera_dataset/main/photo/photo_example_night.png" alt="Rear view camera dataset night scene example" loading="lazy">
+            <figcaption>Nighttime sample illustrating the same dataset domain under lower-light riding conditions.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="project-section" id="license-plate-dataset">
+        <div class="project-header">
+          <p class="section-tag">Project</p>
+          <h2>License Plate Detection Dataset</h2>
+          <p class="project-description">
+            A dedicated license plate detection dataset built for training deep neural detectors on plate localization tasks in road-scene imagery.
+          </p>
+          <ul class="capability-list">
+            <li>COCODetectionDataset structure with FiftyOne-compatible visualization tooling</li>
+            <li>3,395 training images and 500 validation images</li>
+            <li>Two classes focused on plate detection workflows: plate and background</li>
+            <li>Used to train YOLOv5-based license plate detectors for compact detection pipelines</li>
+          </ul>
+          <a class="project-link" href="https://github.com/Valdiolus/License_plate_detection_dataset">Open repository</a>
+        </div>
+
+        <figure class="gallery-card project-main-photo">
+          <img src="https://raw.githubusercontent.com/Valdiolus/License_plate_detection_dataset/main/photo/lpd_example.png" alt="License plate detection dataset example image" loading="lazy">
+          <figcaption>Example image from the license plate detection dataset showing labeled targets for detector training and evaluation.</figcaption>
+        </figure>
+      </section>
+
+      <section class="project-section" id="ajax-ai">
+        <div class="project-header">
+          <p class="section-tag">Project</p>
+          <h2>Ajax AI</h2>
+          <p class="project-description">
+            Led AI development for Ajax embedded video products, including personally training the neural networks for the first Ajax AI camera, DoorBell, and IndoorCam product lines and launching market-ready AI to more than 100k video devices in 150+ countries.
+          </p>
+          <ul class="capability-list">
+            <li>Led an AI team for multiple embedded AI video products across camera, DoorBell, and IndoorCam categories</li>
+            <li>Developed AI pipelines for fast iteration from dataset updates to deployable model releases</li>
+            <li>Formed the annotation team and created rules and tools for fast, consistent dataset annotation</li>
+            <li>Built embedded AI device verification tools to validate product behavior on target hardware</li>
+            <li>Formed the data engineering team for dataset management and scalable data workflows</li>
+            <li>Personally trained the neural networks used in the first Ajax video AI products</li>
+          </ul>
+        </div>
+
+        <figure class="gallery-card project-main-photo">
+          <img src="images/ajax_doorbell.jpg" alt="Ajax DoorBell product graphic" loading="lazy">
+          <figcaption>Ajax DoorBell with AI functions.</figcaption>
+        </figure>
+
+        <div class="gallery-grid project-gallery">
+          <figure class="gallery-card">
+            <img src="images/ajax_indoorcam.jpg" alt="Ajax IndoorCam product graphic" loading="lazy">
+            <figcaption>Ajax IndoorCam with AI functions.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/ajax_cameras1.avif" alt="Ajax outdoor camera product visual" loading="lazy">
+            <figcaption>Various Ajax cameras with AI functions.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/ajax_cameras2.avif" alt="Ajax camera product promotional visual" loading="lazy">
+            <figcaption>How it is seen in an app - pets were detected.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="project-section" id="ajax-mco">
+        <div class="project-header">
+          <p class="section-tag">Project</p>
+          <h2>Ajax MCO</h2>
+          <p class="project-description">
+            Developed software for the Ajax MotionCam Outdoor intrusion product with photo verification on RTOS, with a strong focus on camera and image-quality behavior in real outdoor operating conditions.
+          </p>
+          <ul class="capability-list">
+            <li>Developed RTOS software for a photo intrusion detection product</li>
+            <li>Delivered software improvements that raised photo quality in all weather conditions</li>
+            <li>Improved day and night switching behavior for stable visual performance</li>
+            <li>Implemented image-processing and control algorithms for high-quality outdoor photo output</li>
+          </ul>
+        </div>
+
+        <figure class="gallery-card project-main-photo">
+          <img src="images/ajax_mco.webp" alt="Ajax MotionCam Outdoor product visual" loading="lazy">
+          <figcaption>MotionCam Outdoor product family, where my work was focused on the camera sensor portion.</figcaption>
+        </figure>
+      </section>
+
+      <section class="project-section" id="rwc">
+        <div class="project-header">
+          <p class="section-tag">Project</p>
+          <h2>RWC</h2>
+          <p class="project-description">
+            RWC is a smart bicycle rear-view camera project developed to improve cyclist safety, combining embedded vision hardware, on-bike recording, custom datasets, and real-time AI deployment.
+          </p>
+          <ul class="capability-list">
+            <li>Developed 5 prototypes using Raspberry Pi, Coral AI accelerator, custom photo lenses, microphones, speakers, buzzers, and powerful day/night back lights</li>
+            <li>Built software for video recording on-the-go while cycling</li>
+            <li>Launched beta tests with customers, and used recorded videos to create custom computer-vision datasets</li>
+            <li>Formed an annotation team for labeling the dataset and scaling data preparation</li>
+            <li>Trained neural networks for a real-time embedded AI device using the custom dataset</li>
+            <li>Open-sourced the full datasets with about 40k photos for object detection and about 10k for license plate detection</li>
+          </ul>
+        </div>
+
+        <figure class="gallery-card project-main-photo">
+          <img src="images/RWC10.png" alt="Rendered rear camera module with integrated rear light" loading="lazy">
+          <figcaption>Concept render of the rear camera module with integrated lighting and compact bike-mount packaging.</figcaption>
+        </figure>
+
+        <div class="gallery-grid project-gallery">
+          <figure class="gallery-card">
+            <img src="images/RWC1.png" alt="Front view of the rear camera module prototype" loading="lazy">
+            <figcaption>Assembled prototype showing the camera lens and light housing proportions, used for shows.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/RWC2.png" alt="Rear view camera prototype render side angle" loading="lazy">
+            <figcaption>Assembled prototype for real-world tests.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/RWC3.png" alt="RWC sensor and compute electronics boards" loading="lazy">
+            <figcaption>Electronics without case: camera board, radar board, main board.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/RWC4.png" alt="Rear view camera prototype assembly detail" loading="lazy">
+            <figcaption>Tests on the road.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/RWC5.jpeg" alt="Rear view camera prototype mounted view" loading="lazy">
+            <figcaption>User-mounted prototype on the bike.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/RWC6.jpg" alt="Handheld rear camera module prototype" loading="lazy">
+            <figcaption>Assembled prototype.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/RWC7.jpg" alt="Rear view camera prototype outdoor validation" loading="lazy">
+            <figcaption>On a Web Summit 2019 with a prototype.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/RWC8.jpg" alt="Rear camera module mounted on a bicycle" loading="lazy">
+            <figcaption>User-mounted prototype on the bike.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/RWC9.jpg" alt="Rear view camera prototype application display" loading="lazy">
+            <figcaption>Assembled prototype.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="project-section" id="hls">
+        <div class="project-header">
+          <p class="section-tag">Project</p>
+          <h2>HLS</h2>
+          <p class="project-description">
+            High Level System with Inertial Navigation System: the main control device for the e-bike, integrating CAN, GPRS, GPS, Bluetooth, and Wi-Fi into a single supervisory platform.
+          </p>
+          <ul class="capability-list">
+            <li>Developed the high-level e-bike system across both hardware and software</li>
+            <li>Main control device combining CAN, 2G, GPS, Bluetooth, Wi-Fi, and inertial navigation</li>
+            <li>Developed a communication protocol for managing the bike through a mobile app</li>
+            <li>Integrated central control, connectivity, and navigation functions into one embedded platform</li>
+          </ul>
+        </div>
+
+        <div class="gallery-grid project-gallery">
+          <figure class="gallery-card">
+            <img src="images/HLS1.png" alt="Full HLS assembly with phone application" loading="eager">
             <figcaption>Integrated HLS assembly with the companion e-bike control application.</figcaption>
           </figure>
           <figure class="gallery-card">
             <img src="images/HLS2.png" alt="HLS PCB showing communication and power components" loading="lazy">
-            <figcaption>Main board detail showing communication interfaces, storage, and power electronics.</figcaption>
+            <figcaption>Main board detail showing communication interfaces, SiM, and antennas.</figcaption>
           </figure>
           <figure class="gallery-card">
             <img src="images/HLS3.png" alt="HLS enclosure wiring and internal electronics" loading="lazy">
@@ -90,11 +375,52 @@
         </div>
       </section>
 
-      <section class="feature-card" id="inverter">
-        <div class="feature-copy">
-          <p class="section-tag">Power Electronics Project</p>
-          <h2>PWR Invertor for E-Bike</h2>
-          <p>
+      <section class="project-section" id="ebike">
+        <div class="project-header">
+          <p class="section-tag">Project</p>
+          <h2>E-bike</h2>
+          <p class="project-description">
+            Built a custom electric bicycle with a 5 kW motor, 8 kW peak power, and a top speed of 45 mph, integrating a fully custom energy, control, and connectivity stack.
+          </p>
+          <ul class="capability-list">
+            <li>Built the bike around a 5 kW drivetrain with 8 kW peak output and 45 mph top speed</li>
+            <li>Developed a custom-made battery, BMS, and motor controller</li>
+            <li>Integrated a High-Level System with 2G, Bluetooth, Wi-Fi, GPS, inertial navigation, and 2 CAN buses</li>
+            <li>Combined vehicle hardware, embedded control, and connectivity into one ride-ready custom platform</li>
+            <li>800W onboard charger.</li>
+          </ul>
+        </div>
+
+        <figure class="gallery-card project-main-photo">
+          <img src="images/Ebike2.png" alt="Custom e-bike prototype assembled outdoors" loading="lazy">
+          <figcaption>Completed e-bike during charging on a public station.</figcaption>
+        </figure>
+
+        <div class="gallery-grid project-gallery">
+          <figure class="gallery-card">
+            <img src="images/Ebike1.png" alt="E-bike under test with laptop-based diagnostics" loading="lazy">
+            <figcaption>Updating FW of a bike.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/Ebike3.png" alt="E-bike prototype from another assembly angle" loading="lazy">
+            <figcaption>Assembling battery, BMS.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/Ebike4.jpg" alt="E-bike frame and enclosure during development" loading="lazy">
+            <figcaption>Another E-bike view.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/Ebike5.jpg" alt="Finished e-bike prototype on display outdoors" loading="lazy">
+            <figcaption>Inside e-bike: Battery, HLS (high-level systems), BMS.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="project-section" id="pwr-invertor">
+        <div class="project-header">
+          <p class="section-tag">Project</p>
+          <h2>PWR_invertor</h2>
+          <p class="project-description">
             Power invertor for e-bike, 100V, up to 300A peak, up to 100A constant, CAN interface, isolated drivers for all main mosfets.
           </p>
           <ul class="capability-list">
@@ -105,26 +431,14 @@
           </ul>
         </div>
 
-        <figure class="feature-visual">
-          <img src="images/PWR_invertor1.png" alt="E-bike power inverter enclosure beside system concept materials" loading="lazy">
-          <figcaption>Packaged inverter hardware prepared for integration into the broader e-bike power architecture.</figcaption>
-        </figure>
-      </section>
-
-      <section class="gallery-section" aria-labelledby="inverter-gallery-title">
-        <div class="section-heading">
-          <p class="section-tag">Inverter Gallery</p>
-          <h2 id="inverter-gallery-title">Power Stage Views</h2>
-        </div>
-
-        <div class="gallery-grid">
+        <div class="gallery-grid project-gallery">
           <figure class="gallery-card">
             <img src="images/PWR_invertor1.png" alt="Packaged e-bike power inverter module" loading="lazy">
-            <figcaption>Mechanical enclosure with cooling-focused external form factor for the inverter assembly.</figcaption>
+            <figcaption>Assembled invertor in aluminum enclosure.</figcaption>
           </figure>
           <figure class="gallery-card">
             <img src="images/PWR_invertor2.png" alt="Rendered power inverter PCB with capacitor banks and bus layout" loading="lazy">
-            <figcaption>PCB render showing the high-current layout, capacitor banks, and heat-sink-mounted power stage.</figcaption>
+            <figcaption>CAD render showing the high-current layout, capacitor banks, and heat-sink-mounted power stage.</figcaption>
           </figure>
         </div>
       </section>
